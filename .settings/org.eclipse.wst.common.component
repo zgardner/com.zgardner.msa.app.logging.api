@@ -4,7 +4,10 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="lib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.zgardner.msa.api.common.lib/com.zgardner.msa.api.common.lib">
+        <dependent-module archiveName="com.zgardner.msa.api.common-lib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.zgardner.msa.api.common.lib/com.zgardner.msa.api.common.lib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.zgardner.msa.api.host-lib-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.zgardner.msa.api.host.lib/com.zgardner.msa.api.host.lib">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="api"/>
