@@ -9,7 +9,7 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://com.zgardner.msa.db:3306/com.zgardner.msa.app.logging" />
+		<property name="url" value="jdbc:mysql://db.msa.zgardner.com:3306/com.zgardner.msa.app.logging" />
 		<property name="username" value="logging" />
 		<property name="password" value="com.zgardner.msa.app.logging" />
 	</bean>
